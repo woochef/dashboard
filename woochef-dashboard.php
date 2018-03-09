@@ -15,9 +15,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-final class Dashboard {
+final class WooChefDashboard {
 	/**
-	 * Dashboard version.
+	 * WooChefDashboard version.
 	 *
 	 * @var string
 	 */
@@ -28,18 +28,18 @@ final class Dashboard {
 	 *
 	 * @since 0.1
 	 *
-	 * @var   Dashboard
+	 * @var   WooChefDashboard
 	 */
 	protected static $instance = null;
 
 	/**
-	 * Dashboard Instance.
+	 * WooChefDashboard Instance.
 	 *
 	 * @since 0.1
 	 *
 	 * @static
 	 *
-	 * @return Dashboard  the instance.
+	 * @return WooChefDashboard  the instance.
 	 */
 	public static function instance() {
 		if ( is_null( self::$instance ) ) {
@@ -89,10 +89,10 @@ final class Dashboard {
 /**
  * @since  0.1
  *
- * @return Dashboard  the instance.
+ * @return WooChefDashboard  the instance.
  */
 function woochef_dashboard() {
-	return Dashboard::instance();
+	return WooChefDashboard::instance();
 }
 
 woochef_dashboard();
